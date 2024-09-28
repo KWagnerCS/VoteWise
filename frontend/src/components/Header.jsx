@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <ul className="flex gap-20">
                 <li className="">
-                    <a className="text-blue-500 hover:text-blue-800" href="#">Active</a>
+                    <a className="text-blue-500 hover:text-blue-800" href="/guide">Active</a>
                 </li>
                 <li className="">
                     <a className="text-blue-500 hover:text-blue-800" href="#">Link</a>

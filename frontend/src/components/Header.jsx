@@ -3,10 +3,10 @@ import '../index.css';
 
 const Header = () => {
     return (
-        <header className="flex py-4 px-32 items-center font-sans text-2xl font-medium justify-between">
+        <header className="flex py-4 px-32 items-center text-xl justify-between font-medium">
             <div className="flex justify-center items-center text-nowrap">
                 <img src="https://via.placeholder.com/150" alt="Placeholder Logo" className="max-h-24 w-auto" />
-                <div className="text-4xl p-10">VoteWise</div>
+                <div className="text-6xl p-5 font-bold">Vote Wise</div>
             </div>
             <ul className="flex gap-20">
                 <li className="">

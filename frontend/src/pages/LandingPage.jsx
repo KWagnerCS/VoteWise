@@ -4,33 +4,38 @@ import Header from '../components/Header'
 import ArticleImageWithText from '../components/articleImageWithText'
 
 const LandingPage = () => {
-
-    // const lists = [
-    //     {
-    //         image: "https://images.pexels.com/photos/957769/pexels-photo-957769.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    //         article: 'React',
-    //         buttonText: 'Start Learning'
-    //     },
-    //     {
-    //         image: "https://images.pexels.com/photos/951408/pexels-photo-951408.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    //         article: 'Vite',
-    //         buttonText: 'Learn More'
-    //     }
-    // ]
-
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <>
             <Header />
-            {/* {
-                lists.map((list, index) => (
-                    <ArticleImageWithText key={index} image={list.image} article={list.article} buttonText={list.buttonText} />
-                ))
-            } */}
-            <h1 className="text-2xl p-5 font-bold">Your voice matters. Let us help u express it or some shi.</h1>
-            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Get Started</button>
+            {/* First Section */}
+            <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
+                <h1 className="text-4xl mb-4 font-medium">Your voice matters. Let us help u express it or some shi.</h1>
+                <button
+                    onClick={() => scrollToSection('section2')}
+                    className="px-6 py-2 text-lg bg-blue-500 text-white rounded hover:bg-blue-600"
+                >
+                    Get Started
+                </button>
+            </div>
+
+            {/* Second Section */}
+            <div id="section2" className="h-screen flex flex-col justify-center items-center bg-gray-300 p-8">
+                <h2 className="text-4xl mb-4 font-medium">Are you a U.S. Citizen?</h2>
+                <p className="text-lg">This is where the content of section 2 goes. You can add any content you like here.</p>
+            </div>
+
+
+
+            
         </>
-    )
-}
+    );
+};
 
 export default LandingPage;

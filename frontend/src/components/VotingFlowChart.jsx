@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const votingFlowChart = () => {
+const VotingFlowChart = () => {
   const steps = [
     { 
       id: 1, 

@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/*Shallow routes for the front pages*/}
+        {/* Shallow routes for the front pages */}
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutPage />} />
 

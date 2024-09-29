@@ -28,7 +28,7 @@ const LandingPage = () => {
             </div>
 
             {/* Second Section */}
-            <div id="section2" className="h-screen flex flex-col justify-center items-center bg-gray-300 p-8">
+            <div id="section2" className="h-screen justify-center items-center">
                 <EligibilityQuestionnaire />
                 </div>
         </>

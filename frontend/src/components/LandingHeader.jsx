@@ -1,26 +1,45 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../index.css';
 
-const LandingHeader = () => {
+const MainHeader = () => {
+    const location = useLocation();
+    
     return (
-        <header className="flex py-4 px-32 items-center text-xl justify-between font-medium">
-            <div className="flex justify-center items-center text-nowrap">
-                <img src="https://via.placeholder.com/150" alt="Placeholder Logo" className="max-h-24 w-auto" />
-                <div className="text-6xl p-5 font-bold">VoteWise</div>
-            </div>
+        <header className="flex px-32 items-center text-xl justify-between font-medium">
+        <div className="flex justify-center items-center">
+            <Link to="/">  {/* Replace "/desired-route" with your target route */}
+                <img src="/VoteWise_Logo.svg" alt="VoteWise Logo" className="max-h-24 w-auto" />
+            </Link>
+        </div>
             <ul className="flex gap-20">
-                <li className="">
-                    <a className="hover:text-blue-800" href="/guide">Voting Guide</a>
+                <li>
+                    <Link
+                        to="/guide"
+                        className={`hover:text-blue-800 ${location.pathname === '/guide' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Voting Guide
+                    </Link>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/insights">Candidate Insight</a>
+                <li>
+                    <Link
+                        to="/insights"
+                        className={`hover:text-blue-800 ${location.pathname === '/insights' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Candidate Insights
+                    </Link>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/resources">Resources</a>
+                <li>
+                    <Link
+                        to="/resources"
+                        className={`hover:text-blue-800 ${location.pathname === '/resources' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Resources
+                    </Link>
                 </li>
             </ul>
         </header>
     );
 };
 
-export default LandingHeader;
+export default MainHeader;

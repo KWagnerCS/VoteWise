@@ -2,7 +2,6 @@ import { useState } from 'react'
 import '../index.css'
 import MainHeader from '../components/MainHeader'
 import Footer from '../components/Footer'
-import VotingFlowChart from '../components/VotingFlowChart'
 
 const VotingGuidePage = () => {
 

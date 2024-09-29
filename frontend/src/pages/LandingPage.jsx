@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../index.css'
 import LandingHeader from '../components/LandingHeader'
 import Footer from '../components/Footer'
-import eligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
+import EligibilityQuestionnaire from '../components/EligibilityQuestionnaire'
 
 const LandingPage = () => {
     const scrollToSection = (id) => {
@@ -30,7 +30,7 @@ const LandingPage = () => {
 
             {/* Second Section */}
             <div id="section2" className="h-screen justify-center items-center">
-                <eligibilityQuestionnaire />
+                <EligibilityQuestionnaire />
                 </div>
 
             <Footer />

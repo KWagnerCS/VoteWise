@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const eligibilityQuestionnaire = () => {
+const EligibilityQuestionnaire = () => {
   const questions = [
     { question: "Are you a U.S. citizen?", key: 'citizenship' },
     { question: "Are you 18 years of age or older?", key: 'age' },
@@ -95,4 +95,4 @@ const eligibilityQuestionnaire = () => {
   );
 };
 
-export default eligibilityQuestionnaire;
+export default EligibilityQuestionnaire;

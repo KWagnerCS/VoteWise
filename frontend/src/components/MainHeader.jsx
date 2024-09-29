@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../index.css';
 
 const MainHeader = () => {
+    const location = useLocation();
+    
     return (
         <header className="flex py-4 px-32 items-center text-xl justify-between font-medium">
             <div className="flex justify-center items-center text-nowrap">
@@ -9,21 +12,30 @@ const MainHeader = () => {
                 <div className="text-6xl p-5 font-bold">VoteWise</div>
             </div>
             <ul className="flex gap-20">
-                <li className="">
-                    <a className="hover:text-blue-800" href="/guide">Voting Guide</a>
+                <li>
+                    <Link
+                        to="/guide"
+                        className={`hover:text-blue-800 ${location.pathname === '/guide' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Voting Guide
+                    </Link>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/insights">Candidate Insights</a>
+                <li>
+                    <Link
+                        to="/insights"
+                        className={`hover:text-blue-800 ${location.pathname === '/insights' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Candidate Insights
+                    </Link>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/resources">Resources</a>
+                <li>
+                    <Link
+                        to="/resources"
+                        className={`hover:text-blue-800 ${location.pathname === '/resources' ? 'text-blue-800 font-bold' : ''}`}
+                    >
+                        Resources
+                    </Link>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/about">About Us</a>
-                </li>
-                {/* <li className="">
-                    <a className="text-gray-400 cursor-not-allowed" href="#">Login/Register</a>
-                </li> */}
             </ul>
         </header>
     );

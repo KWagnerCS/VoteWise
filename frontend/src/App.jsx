@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import AboutPage from './pages/AboutPage';
-
 import VotingGuidePage from './pages/VotingGuidePage';
 import PolicyInsightsPage from './pages/PolicyInsightsPage';
 import ResourcesPage from './pages/ResourcesPage';

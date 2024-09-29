@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 const AboutPage = () => {
     return (
         <>
-            <div className="flex flex-col min-h-screen bg-gray-100">
+            <div className="flex flex-col min-h-screen">
                 <MainHeader />
                 <main className="flex-grow p-6">
                     <h1 className="text-3xl font-bold mb-4 text-center">About WiseVote</h1>
@@ -25,7 +25,7 @@ const AboutPage = () => {
                     <section className="text-center mt-6">
                         <h3 className="text-lg font-semibold">Connect with Us</h3>
                         <div className="flex justify-center mt-2 space-x-4">
-                            <a href="https://www.linkedin.com/in/kevin-wagner" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                            <a href="https://www.linkedin.com/in/kwagnercs" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                                 Kevin Wagner
                             </a>
                             <span>|</span>

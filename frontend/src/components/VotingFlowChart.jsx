@@ -24,7 +24,7 @@ const VotingFlowChart = () => {
       id: 4,
       title: "Step 4: Find Your Polling Place or Get a Mail-in Ballot",
       description: `After thoroughly researching the candidates and issues, the next important step is to decide how you will cast your vote. If you plan to vote in person, it's essential to find your designated polling place, which is usually located close to your home. Use an online polling place locator tool provided by your election authority to easily find this information. Once you know where to vote, make a note of the polling place’s hours of operation, as they may vary. Voting in person is a great way to engage directly with the election process. However, if you prefer the convenience of voting from home, you can request a mail-in ballot. Be sure to submit your request before the official deadline, as this ensures you receive your ballot in time. Whether you choose to vote in person or by mail, planning ahead will ensure your vote counts.`,
-      videoUrl: "https://www.youtube.com/embed/example3" // Replace with actual YouTube link
+      videoUrl: "null" // Replace with actual YouTube link
     },
     {
       id: 5,

@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const RepresentativeCard = ({ name, role, isSelected, onClick }) => (
     <div
       onClick={onClick}
-      className={`w-full border rounded-lg p-4 mb-2 bg-white shadow-md cursor-pointer transition-colors duration-200 ${isSelected ? "bg-gray-200" : "hover:bg-gray-200"}`}
+      className={`border w-full rounded-lg p-4 mb-2 bg-white shadow-md cursor-pointer transition-colors duration-200 ${isSelected ? "bg-gray-200" : "hover:bg-gray-200"}`}
     >
       <h2 className="font-semibold text-lg">{name}</h2>
       <p>{role}</p>
@@ -141,7 +141,7 @@ const CandidateInsightsPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
                 <MainHeader />
-    <div className="min-h-screen flex flex-col items-center justify-start pt-12 bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center pt-12 bg-gray-100">
       <h1 className="text-2xl font-bold mb-4">Search Representatives by Location</h1>
 
       {/* Form to search for representatives */}
@@ -180,11 +180,11 @@ const CandidateInsightsPage = () => {
       {error && <p className="text-red-500">{error}</p>}
 
       {/* Representative Results */}
-      <div className="w-full max-w-xl flex flex-col items-center">
+      <div className="flex flex-col items-center w-1/2 max-w-full">
         {Object.entries(representatives).map(([category, reps]) => (
           reps.length > 0 && selectedLevels.includes(category) && (
             <div key={category} className="mb-8">
-              <h3 className="text-xl font-bold mt-4">{category} Representatives</h3>
+              <h3 className="text-xl max-w-full font-bold mt-4">{category} Representatives</h3>
               {reps.map((rep, idx) => (
                 <div key={idx}>
                   <RepresentativeCard

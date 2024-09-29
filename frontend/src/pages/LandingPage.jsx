@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../index.css'
 import LandingHeader from '../components/LandingHeader'
 import Footer from '../components/Footer'
-import EligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
+import EligibilityQuestionnaire from '../components/EligibilityQuestionnaire'
 
 const LandingPage = () => {
     const scrollToSection = (id) => {

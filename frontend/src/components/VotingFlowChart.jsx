@@ -94,7 +94,7 @@ const votingFlowChart = () => {
         <p className="text-gray-700">{steps[currentStep].description}</p>
         <ol className="mt-4 text-gray-600 list-none">
           {steps[currentStep].details.map((detail, index) => (
-            <li key={index} className="ml-4 list-disc list-none">{detail}</li>
+            <li key={index} className="ml-4 list-disc">{detail}</li>
           ))}
         </ol>
       </div>

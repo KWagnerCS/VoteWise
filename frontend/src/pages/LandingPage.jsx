@@ -3,7 +3,6 @@ import '../index.css'
 import LandingHeader from '../components/LandingHeader'
 import Footer from '../components/Footer'
 import EligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
-import ArticleImageWithText from '../components/articleImageWithText'
 
 const LandingPage = () => {
     const scrollToSection = (id) => {
@@ -17,6 +16,8 @@ const LandingPage = () => {
         <>
             <LandingHeader />
             {/* First Section */}
+            <div className="h-screen flex flex-col justify-center items-center bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/flagrealsky.jpg')" }}>
+            </div>
             <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
                 <h1 className="text-4xl mb-4 font-medium">Your voice matters. Let us help u express it or some shi.</h1>
                 <button

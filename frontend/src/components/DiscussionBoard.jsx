@@ -30,11 +30,17 @@ const DiscussionBoard = () => {
     <div className="max-w-2xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Discussion Board</h1>
       {posts.map(post => (
-        <div key={post.id} className="border p-4 mb-4 rounded shadow">
+        <a
+        href="https://www.vote.org/"
+        target="_blank" 
+        rel="noopener noreferrer"
+        >
+        <div key={post.id} className="border p-4 mb-4 rounded shadow transition-transform transform hover:scale-105">
           <h2 className="text-xl font-semibold">{post.title}</h2>
           <p className="text-gray-500">By {post.author} on {post.date}</p>
           <p className="mt-2">{post.content}</p>
         </div>
+        </a>
       ))}
     </div>
   );

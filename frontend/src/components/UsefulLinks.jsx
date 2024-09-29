@@ -6,38 +6,45 @@ import React from 'react';
 const links = [
   {
     id: 1,
-    title: "Vote.gov",
+    title: "Vote.org",
     description: "Find out how to vote in your state, register, and learn about the voting process.",
-    image: "https://via.placeholder.com/300x200?text=Vote.gov",
-    url: "https://www.vote.gov/"
+    image: "https://via.placeholder.com/300x200?text=Vote.org",
+    url: "https://www.vote.org/"
   },
   {
     id: 2,
-    title: "Can I Vote?",
-    description: "Check your registration status and learn about voting in your state.",
-    image: "https://via.placeholder.com/300x200?text=Can+I+Vote",
-    url: "https://www.canivote.org/"
+    title: "USA.gov",
+    description: "The U.S. government's official web portal, providing access to federal, state, and local resources.",
+    image: "https://via.placeholder.com/300x200?text=USA.gov",
+    url: "https://www.usa.gov/"
   },
   {
     id: 3,
     title: "Ballotpedia",
     description: "Comprehensive resource for information on elections, candidates, and ballot measures.",
     image: "https://via.placeholder.com/300x200?text=Ballotpedia",
-    url: "https://ballotpedia.org/"
+    url: "https://ballotpedia.org/United_States_Senate_elections,_2024"
   },
   {
     id: 4,
-    title: "Vote411.org",
-    description: "Get information on how to vote, what’s on your ballot, and how to contact local officials.",
-    image: "https://via.placeholder.com/300x200?text=Vote411",
-    url: "https://www.vote411.org/"
+    title: "Rock the Vote",
+    description: "Get information on how to vote and participate in elections.",
+    image: "https://via.placeholder.com/300x200?text=Rock+the+Vote",
+    url: "https://www.rockthevote.org/"
   },
   {
     id: 5,
-    title: "USA.gov",
-    description: "The U.S. government's official web portal, providing access to federal, state, and local resources.",
-    image: "https://via.placeholder.com/300x200?text=USA.gov",
-    url: "https://www.usa.gov/"
+    title: "League of Women Voters",
+    description: "Empowering voters and defending democracy.",
+    image: "https://via.placeholder.com/300x200?text=League+of+Women+Voters",
+    url: "https://www.lwv.org/"
+  },
+  {
+    id: 6,
+    title: "Election Assistance Commission (EAC)",
+    description: "Providing information on federal election laws and resources.",
+    image: "https://via.placeholder.com/300x200?text=EAC",
+    url: "https://www.eac.gov/"
   },
 ];
 
@@ -47,14 +54,19 @@ const UsefulLinks = () => {
       <h1 className="text-2xl font-bold mb-4">Useful Government Links</h1>
       <div className="flex flex-col gap-4">
         {links.map(link => (
-          <div key={link.id} className="flex border p-4 mb-4 rounded shadow">
+          <a 
+            key={link.id} 
+            href={link.url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex border p-4 rounded shadow transition-transform transform hover:scale-105" 
+          >
             <img src={link.image} alt={link.title} className="w-1/3 rounded-l" />
             <div className="p-4 w-2/3">
               <h2 className="text-lg font-semibold">{link.title}</h2>
               <p className="mt-1">{link.description}</p>
-              <a href={link.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-blue-500 hover:underline">Visit</a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

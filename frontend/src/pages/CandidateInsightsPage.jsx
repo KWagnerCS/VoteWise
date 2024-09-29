@@ -3,7 +3,7 @@ import '../index.css'
 import MainHeader from '../components/MainHeader'
 import Footer from '../components/Footer'
 
-const PolicyInsightsPage = () => {
+const CandidateInsightsPage = () => {
 
     return (
         <>
@@ -18,4 +18,4 @@ const PolicyInsightsPage = () => {
     )
 }
 
-export default PolicyInsightsPage;
+export default CandidateInsightsPage;

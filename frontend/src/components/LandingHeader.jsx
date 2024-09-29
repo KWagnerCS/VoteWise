@@ -10,16 +10,16 @@ const LandingHeader = () => {
             </div>
             <ul className="flex gap-20">
                 <li className="">
-                    <a className="hover:text-blue-800" href="/guide">Guide</a>
+                    <a className="hover:text-blue-800" href="/guide">Voting Guide</a>
                 </li>
                 <li className="">
-                    <a className="hover:text-blue-800" href="/insights">Policies</a>
+                    <a className="hover:text-blue-800" href="/insights">Candidate Insight</a>
                 </li>
                 <li className="">
                     <a className="hover:text-blue-800" href="/resources">Resources</a>
                 </li>
                 <li className="">
-                    <a className="hover:text-blue-800" href="/advisor">Chatbot</a>
+                    <a className="hover:text-blue-800" href="/advisor">AI Advisor</a>
                 </li>
                 <li className="">
                     <a className="hover:text-blue-800" href="/about">About Us</a>

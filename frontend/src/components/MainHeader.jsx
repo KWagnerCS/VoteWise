@@ -19,9 +19,6 @@ const MainHeader = () => {
                     <a className="hover:text-blue-800" href="/resources">Resources</a>
                 </li>
                 <li className="">
-                    <a className="hover:text-blue-800" href="/advisor">AI Advisor</a>
-                </li>
-                <li className="">
                     <a className="hover:text-blue-800" href="/about">About Us</a>
                 </li>
                 {/* <li className="">

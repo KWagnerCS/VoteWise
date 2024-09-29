@@ -50,13 +50,13 @@ const EligibilityQuestionnaire = () => {
           <div className="flex space-x-10">
             <button
               onClick={() => handleAnswer("yes")}
-              className="bg-green-500 hover:bg-green-600 text-white text-3xl py-4 px-8 rounded-lg transition duration-300"
+              className="bg-blue-800 hover:bg-blue-900 text-white text-3xl py-4 px-8 rounded-lg transition duration-300"
             >
               Yes
             </button>
             <button
               onClick={() => handleAnswer("no")}
-              className="bg-red-500 hover:bg-red-600 text-white text-3xl py-4 px-8 rounded-lg transition duration-300"
+              className="bg-blue-800 hover:bg-blue-900 text-white text-3xl py-4 px-8 rounded-lg transition duration-300"
             >
               No
             </button>

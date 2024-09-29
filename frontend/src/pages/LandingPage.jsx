@@ -32,6 +32,8 @@ const LandingPage = () => {
             <div id="section2" className="h-screen justify-center items-center">
                 <EligibilityQuestionnaire />
                 </div>
+
+            <Footer />
         </>
     );
 };

@@ -8,8 +8,7 @@ const MainHeader = () => {
     return (
         <header className="flex py-4 px-32 items-center text-xl justify-between font-medium">
             <div className="flex justify-center items-center text-nowrap">
-                <img src="https://via.placeholder.com/150" alt="Placeholder Logo" className="max-h-24 w-auto" />
-                <div className="text-6xl p-5 font-bold">VoteWise</div>
+                <img src="/VoteWise_Logo.svg" alt="Placeholder Logo" className="max-h-24 w-auto" />
             </div>
             <ul className="flex gap-20">
                 <li>

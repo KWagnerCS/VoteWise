@@ -18,12 +18,6 @@ const LandingHeader = () => {
                 <li className="">
                     <a className="hover:text-blue-800" href="/resources">Resources</a>
                 </li>
-                <li className="">
-                    <a className="hover:text-blue-800" href="/about">About Us</a>
-                </li>
-                {/* <li className="">
-                    <a className="text-gray-400 cursor-not-allowed" href="#">Login/Register</a>
-                </li> */}
             </ul>
         </header>
     );

@@ -10,7 +10,7 @@ const AboutPage = () => {
             <div className="flex flex-col min-h-screen">
                 <MainHeader />
                 <main className="flex-grow">
-                    <h1 className="text-2xl p-5 font-bold">placeholder.</h1>
+                    <h1 className="text-2xl p-5 font-bold">Created by Kevin Wagner and Alexander Aziz.</h1>
                 </main>
                 <Footer />
             </div>

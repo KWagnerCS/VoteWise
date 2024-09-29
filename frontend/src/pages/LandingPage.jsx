@@ -17,6 +17,8 @@ const LandingPage = () => {
         <>
             <LandingHeader />
             {/* First Section */}
+            <div className="h-screen flex flex-col justify-center items-center bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/flagrealsky.jpg')" }}>
+            </div>
             <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
                 <h1 className="text-4xl mb-4 font-medium">Your voice matters. Let us help u express it or some shi.</h1>
                 <button

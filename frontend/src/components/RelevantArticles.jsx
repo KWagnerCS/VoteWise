@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css'
+import '../index.css';
 
 // Sample articles data
 const articles = [
@@ -32,18 +32,22 @@ const articles = [
 const RelevantArticles = () => {
   return (
     <div className="max-w-4xl mx-auto gap-4">
-      <h1 className="text-2xl font-bold mb-4">Relevant Articles {">"}</h1>
+      <h1 className="text-2xl font-bold mb-4">Relevant Articles</h1>
       <div className="flex flex-col gap-4">
         {articles.map(article => (
-          <div key={article.id} className="flex border p-4 mb-4 rounded shadow">
+          <a 
+            key={article.id} 
+            href={article.link} 
+            className="flex border p-4  rounded shadow transition-transform transform hover:scale-105" 
+            style={{ textDecoration: 'none' }} // Removes underline
+          >
             <img src={article.image} alt={article.title} className="w-1/3 rounded-l" />
             <div className="p-4 w-2/3">
               <h2 className="text-lg font-semibold">{article.title}</h2>
               <p className="text-gray-500 text-sm">By {article.author}</p>
               <p className="mt-2">{article.summary}</p>
-              <a href={article.link} className="mt-4 inline-block text-blue-500 hover:underline">Read more</a>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

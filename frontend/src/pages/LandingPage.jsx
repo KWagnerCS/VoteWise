@@ -3,7 +3,6 @@ import '../index.css'
 import LandingHeader from '../components/LandingHeader'
 import Footer from '../components/Footer'
 import EligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
-import ArticleImageWithText from '../components/articleImageWithText'
 
 const LandingPage = () => {
     const scrollToSection = (id) => {

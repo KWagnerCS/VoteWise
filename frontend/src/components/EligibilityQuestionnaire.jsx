@@ -82,7 +82,7 @@ const EligibilityQuestionnaire = () => {
                 You are not eligible to vote.
               </h3>
               <button
-                onClick={() => window.location.href = 'https://www.usa.gov/who-can-vote'}
+                onClick={() => window.open('https://www.usa.gov/who-can-vote', '_blank')}
                 className="bg-red-500 hover:bg-red-600 text-white text-2xl py-4 px-8 rounded-lg transition duration-300"
               >
                 Learn More About Voting

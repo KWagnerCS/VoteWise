@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../index.css'
 import Header from '../components/Header'
+import EligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
 import ArticleImageWithText from '../components/articleImageWithText'
 
 const LandingPage = () => {
@@ -27,8 +28,7 @@ const LandingPage = () => {
 
             {/* Second Section */}
             <div id="section2" className="h-screen flex flex-col justify-center items-center bg-gray-300 p-8">
-                <h2 className="text-4xl mb-4 font-medium">Are you a U.S. Citizen?</h2>
-                <p className="text-lg">This is where the content of section 2 goes. You can add any content you like here.</p>
+                <EligibilityQuestionnaire />
             </div>
 
 

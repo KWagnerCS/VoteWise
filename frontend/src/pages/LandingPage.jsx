@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../index.css'
-import Header from '../components/Header'
-import ArticleImageWithText from '../components/articleImageWithText'
+import LandingHeader from '../components/LandingHeader'
+import Footer from '../components/Footer';
 
 const LandingPage = () => {
     const scrollToSection = (id) => {
@@ -13,7 +13,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <Header />
+            <LandingHeader />
             {/* First Section */}
             <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
                 <h1 className="text-4xl mb-4 font-medium">Your voice matters. Let us help u express it or some shi.</h1>
@@ -29,11 +29,8 @@ const LandingPage = () => {
             <div id="section2" className="h-screen flex flex-col justify-center items-center bg-gray-300 p-8">
                 <h2 className="text-4xl mb-4 font-medium">Are you a U.S. Citizen?</h2>
                 <p className="text-lg">This is where the content of section 2 goes. You can add any content you like here.</p>
-            </div>
-
-
-
-            
+            </div>   
+            <Footer />
         </>
     );
 };

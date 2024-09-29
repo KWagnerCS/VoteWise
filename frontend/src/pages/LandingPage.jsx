@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import '../index.css'
+import LandingHeader from '../components/LandingHeader'
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 import EligibilityQuestionnaire from '../components/eligibilityQuestionnaire'
 import ArticleImageWithText from '../components/articleImageWithText'
@@ -14,7 +16,7 @@ const LandingPage = () => {
 
     return (
         <>
-            <Header />
+            <LandingHeader />
             {/* First Section */}
             <div className="h-screen flex flex-col justify-center items-center bg-gray-200">
                 <h1 className="text-4xl mb-4 font-medium">Your voice matters. Let us help u express it or some shi.</h1>
@@ -29,11 +31,7 @@ const LandingPage = () => {
             {/* Second Section */}
             <div id="section2" className="h-screen flex flex-col justify-center items-center bg-gray-300 p-8">
                 <EligibilityQuestionnaire />
-            </div>
-
-
-
-            
+                </div>
         </>
     );
 };
